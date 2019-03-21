@@ -1,0 +1,121 @@
+57: !!! SoftmaxMKLDNNKernel
+457: test_softmax_mkldnn_op failed
+457:  ....E..
+457: ======================================================================
+457: ERROR: test_check (test_softmax_mkldnn_op.TestSoftmaxMKLDNNPrimitivesAlreadyExist)
+457: ----------------------------------------------------------------------
+457: Traceback (most recent call last):
+457:   File "/home/pawepiot/github.intel.com/debug_version/aipg/scripts/paddle/build/python/paddle/fluid/tests/unittests/mkldnn/test_softmax_mkldnn_op.py", line 53, in test_check
+457:     self, self.op_type, self.x, self.out, self.out_grad, self.x_grad)
+457:   File "/home/pawepiot/github.intel.com/debug_version/aipg/scripts/paddle/build/python/paddle/fluid/tests/unittests/mkldnn/mkldnn_op_test.py", line 70, in check_if_mkldnn_primitives_exist_in_bwd
+457:     fetch_list=['x@GRAD', 'out'])
+457:   File "/home/pawepiot/github.intel.com/debug_version/aipg/scripts/paddle/build/python/paddle/fluid/executor.py", line 525, in run
+457:     use_program_cache=use_program_cache)
+457:   File "/home/pawepiot/github.intel.com/debug_version/aipg/scripts/paddle/build/python/paddle/fluid/executor.py", line 593, in _run
+457:     exe.run(program.desc, scope, 0, True, True, fetch_var_name)
+457: EnforceNotMet: Invoke operator softmax_grad error.
+457: Python Callstacks:
+457:   File "/home/pawepiot/github.intel.com/debug_version/aipg/scripts/paddle/build/python/paddle/fluid/framework.py", line 1380, in append_op
+457:     attrs=kwargs.get("attrs", None))
+457:   File "/home/pawepiot/github.intel.com/debug_version/aipg/scripts/paddle/build/python/paddle/fluid/tests/unittests/mkldnn/mkldnn_op_test.py", line 46, in check_if_mkldnn_primitives_exist_in_bwd
+457:     attrs={'use_mkldnn': True})
+457:   File "/home/pawepiot/github.intel.com/debug_version/aipg/scripts/paddle/build/python/paddle/fluid/tests/unittests/mkldnn/test_softmax_mkldnn_op.py", line 53, in test_check
+457:     self, self.op_type, self.x, self.out, self.out_grad, self.x_grad)
+457:   File "/usr/lib/python2.7/unittest/case.py", line 329, in run
+457:     testMethod()
+457:   File "/usr/lib/python2.7/unittest/case.py", line 393, in __call__
+457:     return self.run(*args, **kwds)
+457:   File "/usr/lib/python2.7/unittest/suite.py", line 108, in run
+457:     test(result)
+457:   File "/usr/lib/python2.7/unittest/suite.py", line 70, in __call__
+457:     return self.run(*args, **kwds)
+457:   File "/usr/lib/python2.7/unittest/suite.py", line 108, in run
+457:     test(result)
+457:   File "/usr/lib/python2.7/unittest/suite.py", line 70, in __call__
+457:     return self.run(*args, **kwds)
+457:   File "/usr/lib/python2.7/unittest/runner.py", line 151, in run
+457:     test(result)
+457:   File "/home/pawepiot/github.intel.com/debug_version/aipg/scripts/paddle/tools/test_runner.py", line 39, in main
+457:     res = unittest.TextTestRunner(stream=buffer).run(tests)
+457:   File "/home/pawepiot/github.intel.com/debug_version/aipg/scripts/paddle/tools/test_runner.py", line 53, in <module>
+457:     main()
+457: C++ Callstacks:
+457: Enforce failed. Expected rank >= 2, but received rank:1 < 2:2.
+457: 'ReshapeToMatrix()' is only used for flatten high rank tensors to matrixs. Can not be used in reshaping vectors. at [/home/pawepiot/github.intel.com/debug_version/aipg/scripts/paddle/paddle/fluid/framework/tensor_impl.h:70]
+457: PaddlePaddle Call Stacks:
+457: 0       0x7f44951cdcdap void paddle::platform::EnforceNotMet::Init<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, char const*, int) + 470
+457: 1       0x7f449519bfedp paddle::platform::EnforceNotMet::EnforceNotMet(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*, int) + 199
+457: 2       0x7f4495af3c38p paddle::framework::ReshapeToMatrix(paddle::framework::Tensor const&, int) + 494
+457: 3       0x7f4496999b5ap paddle::operators::SoftmaxGradKernel<paddle::platform::CPUDeviceContext, float>::Compute(paddle::framework::ExecutionContext const&) const + 1036
+457: 4       0x7f4496997ecdp paddle::framework::OpKernelRegistrarFunctor<paddle::platform::CPUPlace, false, 0ul, paddle::operators::SoftmaxGradKernel<paddle::platform::CPUDeviceContext, float>, paddle::operators::SoftmaxGradKernel<paddle::platform::CPUDeviceContext, double> >::operator()(char const*, char const*, int) const::{lambda(paddle::framework::ExecutionContext const&)#1}::operator()(paddle::framework::ExecutionContext const&) const + 107
+457: 5       0x7f449699ef6ep std::_Function_handler<void (paddle::framework::ExecutionContext const&), paddle::framework::OpKernelRegistrarFunctor<paddle::platform::CPUPlace, false, 0ul, paddle::operators::SoftmaxGradKernel<paddle::platform::CPUDeviceContext, float>, paddle::operators::SoftmaxGradKernel<paddle::platform::CPUDeviceContext, double> >::operator()(char const*, char const*, int) const::{lambda(paddle::framework::ExecutionContext const&)#1}>::_M_invoke(std::_Any_data const&, paddle::framework::ExecutionContext const&) + 112
+457: 6       0x7f44957896fbp std::function<void (paddle::framework::ExecutionContext const&)>::operator()(paddle::framework::ExecutionContext const&) const + 145
+457: 7       0x7f44980b3547p paddle::framework::OperatorWithKernel::RunImpl(paddle::framework::Scope const&, boost::variant<paddle::platform::CUDAPlace, paddle::platform::CPUPlace, paddle::platform::CUDAPinnedPlace, boost::detail::variant::void_, boost::detail::variant::void_, boost::detail::variant::void_, boost::detail::variant::void_, boost::detail::variant::void_, boost::detail::variant::void_, boost::detail::variant::void_, boost::detail::variant::void_, boost::detail::variant::void_, boost::detail::variant::void_, boost::detail::variant::void_, boost::detail::variant::void_, boost::detail::variant::void_, boost::detail::variant::void_, boost::detail::variant::void_, boost::detail::variant::void_, boost::detail::variant::void_> const&) const + 3805
+457: 8       0x7f44980a9ce2p paddle::framework::OperatorBase::Run(paddle::framework::Scope const&, boost::variant<paddle::platform::CUDAPlace, paddle::platform::CPUPlace, paddle::platform::CUDAPinnedPlace, boost::detail::variant::void_, boost::detail::variant::void_, boost::detail::variant::void_, boost::detail::variant::void_, boost::detail::variant::void_, boost::detail::variant::void_, boost::detail::variant::void_, boost::detail::variant::void_, boost::detail::variant::void_, boost::detail::variant::void_, boost::detail::variant::void_, boost::detail::variant::void_, boost::detail::variant::void_, boost::detail::variant::void_, boost::detail::variant::void_, boost::detail::variant::void_, boost::detail::variant::void_> const&) + 1462
+457: 9       0x7f44956ae9c6p paddle::framework::Executor::RunPreparedContext(paddle::framework::ExecutorPrepareContext*, paddle::framework::Scope*, bool, bool, bool) + 1414
+457: 10      0x7f44956a7b18p paddle::framework::Executor::Run(paddle::framework::ProgramDesc const&, paddle::framework::Scope*, int, bool, bool, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&, bool) + 352
+457: 11      0x7f4495109040p
+457: 12      0x7f449518d298p
+457: 13      0x7f449517b922p
+457: 14      0x7f4495160ae0p
+457: 15      0x7f4495160c65p
+457: 16      0x7f44951bff10p
+457: 17            0x4c5326p PyEval_EvalFrameEx + 37958
+457: 18            0x4b9b66p PyEval_EvalCodeEx + 774
+457: 19            0x4c1f56p PyEval_EvalFrameEx + 24694
+457: 20            0x4b9b66p PyEval_EvalCodeEx + 774
+457: 21            0x4c17c6p PyEval_EvalFrameEx + 22758
+457: 22            0x4b9b66p PyEval_EvalCodeEx + 774
+457: 23            0x4c1f56p PyEval_EvalFrameEx + 24694
+457: 24            0x4b9b66p PyEval_EvalCodeEx + 774
+457: 25            0x4c1f56p PyEval_EvalFrameEx + 24694
+457: 26            0x4b9b66p PyEval_EvalCodeEx + 774
+457: 27            0x4d57a3p
+457: 28            0x4a587ep PyObject_Call + 62
+457: 29            0x4be51ep PyEval_EvalFrameEx + 9790
+457: 30            0x4b9b66p PyEval_EvalCodeEx + 774
+457: 31            0x4d5669p
+457: 32            0x4eef5ep
+457: 33            0x4a587ep PyObject_Call + 62
+457: 34            0x548fc3p
+457: 35            0x4c166dp PyEval_EvalFrameEx + 22413
+457: 36            0x4b9b66p PyEval_EvalCodeEx + 774
+457: 37            0x4d57a3p
+457: 38            0x4a587ep PyObject_Call + 62
+457: 39            0x4be51ep PyEval_EvalFrameEx + 9790
+457: 40            0x4b9b66p PyEval_EvalCodeEx + 774
+457: 41            0x4d5669p
+457: 42            0x4eef5ep
+457: 43            0x4a587ep PyObject_Call + 62
+457: 44            0x548fc3p
+457: 45            0x4c166dp PyEval_EvalFrameEx + 22413
+457: 46            0x4b9b66p PyEval_EvalCodeEx + 774
+457: 47            0x4d57a3p
+457: 48            0x4a587ep PyObject_Call + 62
+457: 49            0x4be51ep PyEval_EvalFrameEx + 9790
+457: 50            0x4b9b66p PyEval_EvalCodeEx + 774
+457: 51            0x4d5669p
+457: 52            0x4eef5ep
+457: 53            0x4a587ep PyObject_Call + 62
+457: 54            0x548fc3p
+457: 55            0x4c166dp PyEval_EvalFrameEx + 22413
+457: 56            0x4c141fp PyEval_EvalFrameEx + 21823
+457: 57            0x4b9b66p PyEval_EvalCodeEx + 774
+457: 58            0x4c1f56p PyEval_EvalFrameEx + 24694
+457: 59            0x4b9b66p PyEval_EvalCodeEx + 774
+457: 60            0x4eb69fp
+457: 61            0x4e58f2p PyRun_FileExFlags + 130
+457: 62            0x4e41a6p PyRun_SimpleFileExFlags + 390
+457: 63            0x4938cep Py_Main + 1358
+457: 64      0x7f45062d5830p __libc_start_main + 240
+457: 65            0x493299p _start + 41
+457:
+457:
+457: ----------------------------------------------------------------------
+457: Ran 7 tests in 0.402s
+457:
+457: FAILED (errors=1)
+457:
+1/1 Test #457: test_softmax_mkldnn_op ...........***Failed    4.46 sec
+
+

@@ -1,0 +1,88 @@
+
+batch_size: 4
+data_dir: data/ILSVRC2012
+data_format: NCHW
+data_set: flowers
+device: CPU
+infer_only: False
+iterations: 10
+model: resnet_imagenet
+pass_num: 1
+save_model: True
+save_model_path: /home/pawepiot/github.intel.com/debug_version/aipg/scripts/save_tmp_models_train
+skip_batch_num: 0
+skip_test: False
+test_file_list: data/ILSVRC2012/val_list.txt
+train_file_list: data/ILSVRC2012/train_list.txt
+use_cprof: False
+use_fake_data: True
+use_nvprof: False
+------------------------------------------------
+memory_optimize is deprecated. Use CompiledProgram and Executor
+!!! SoftmaxMKLDNNKernel
+Pass: 0, Iter: 1, Loss: 6.570304, Accuracy: 0.000000, FPS: 1.51344 img/s
+!!! SoftmaxMKLDNNKernel
+Pass: 0, Iter: 2, Loss: 0.000000, Accuracy: 1.000000, FPS: 1.96379 img/s
+!!! SoftmaxMKLDNNKernel
+Pass: 0, Iter: 3, Loss: 0.000000, Accuracy: 1.000000, FPS: 2.00646 img/s
+!!! SoftmaxMKLDNNKernel
+Pass: 0, Iter: 4, Loss: 0.000000, Accuracy: 1.000000, FPS: 2.01359 img/s
+!!! SoftmaxMKLDNNKernel
+Pass: 0, Iter: 5, Loss: 0.000000, Accuracy: 1.000000, FPS: 2.00925 img/s
+!!! SoftmaxMKLDNNKernel
+Pass: 0, Iter: 6, Loss: 0.000000, Accuracy: 1.000000, FPS: 2.01753 img/s
+!!! SoftmaxMKLDNNKernel
+Pass: 0, Iter: 7, Loss: 0.000000, Accuracy: 1.000000, FPS: 2.01007 img/s
+!!! SoftmaxMKLDNNKernel
+Pass: 0, Iter: 8, Loss: 0.000000, Accuracy: 1.000000, FPS: 2.01936 img/s
+!!! SoftmaxMKLDNNKernel
+Pass: 0, Iter: 9, Loss: 0.000000, Accuracy: 1.000000, FPS: 2.00424 img/s
+!!! SoftmaxMKLDNNKernel
+Pass: 0, Iter: 10, Loss: 0.000000, Accuracy: 1.000000, FPS: 2.01865 img/s
+
+Pass 0 statistics:
+Loss: 0.657030, Train Accuracy: 0.900000
+Avg fps: 1.95764, std fps: 0.14885, fps for 99pc latency: 1.55397
+Avg latency: 2.05815, std latency: 0.19555, 99pc latency: 2.58843
+Total examples: 40, total time: 20.58479, total examples/sec: 1.94318
+
+/home/pawepiot/github.intel.com/debug_version/aipg/scripts/paddle/build/python/paddle/fluid/io.py:945: RuntimeWarning: save_inference_model must put before you call memory_optimize.                                             the memory_optimize will modify the original program,                                             is not suitable for saving inference model                                             we save the original program as inference model.
+  RuntimeWarning)
+Model saved into /home/pawepiot/github.intel.com/debug_version/aipg/scripts/save_tmp_models_train
+W0321 16:22:06.683900 20008 profiler.cc:89] CUDA CUPTI is not enabled
+
+------------------------->     Profiling Report     <-------------------------
+
+Place: CPU
+Time unit: ms
+Sorted by total time in descending order in the same thread
+
+Event                            Calls       Total       Min.        Max.        Ave.        Ratio.
+thread0::conv2d_grad             530         4790.31     2.30951     34.1236     9.03833     0.246543
+thread0::momentum                1600        3965.23     0.064801    43.3163     2.47827     0.204078
+thread0::sum                     160         2977.33     5.65588     45.1516     18.6083     0.153234
+thread0::elementwise_add         160         2961.29     5.60548     46.9586     18.508      0.152409
+thread0::conv2d                  530         2393.39     1.0951      27.6977     4.51583     0.123181
+thread0::batch_norm_grad         530         680.341     0.543833    4.68635     1.28366     0.0350151
+thread0::batch_norm              530         660.307     0.600954    10.5149     1.24586     0.0339841
+thread0::relu_grad               490         284.317     0.225814    2.20023     0.580239    0.014633
+thread0::relu                    490         200.144     0.185266    2.41004     0.408458    0.0103008
+thread0::save                    266         196.818     0.050743    35.5506     0.739917    0.0101296
+thread0::elementwise_add_grad    160         184.924     0.383762    2.9179      1.15577     0.00951748
+thread0::mul                     10          37.7347     0.588551    32.3774     3.77347     0.00194209
+thread0::pool2d_grad             20          35.6515     0.749553    5.45089     1.78258     0.00183488
+thread0::pool2d                  20          26.7741     0.517427    3.26721     1.33871     0.00137798
+thread0::mul_grad                10          9.85925     0.652448    3.92156     0.985925    0.000507427
+thread0::top_k                   20          5.80053     0.230072    0.660823    0.290026    0.000298536
+thread0::softmax                 10          4.93282     0.365889    1.14233     0.493282    0.000253878
+thread0::accuracy                20          3.32773     0.132622    0.393605    0.166386    0.000171268
+thread0::softmax_grad            10          3.00347     0.2477      0.753744    0.300347    0.00015458
+thread0::cross_entropy2          10          2.63763     0.215915    0.574167    0.263763    0.000135751
+thread0::mean                    10          1.38173     0.111291    0.322897    0.138173    7.11135e-05
+thread0::fill_constant           10          1.15596     0.097907    0.251976    0.115596    5.94939e-05
+thread0::mean_grad               10          0.874132    0.072932    0.207981    0.0874132   4.4989e-05
+thread0::cross_entropy_grad2     10          0.868012    0.0719      0.20478     0.0868012   4.4674e-05
+thread0::fetch                   30          0.813958    0.009238    0.117447    0.0271319   4.1892e-05
+thread0::feed                    20          0.699381    0.01227     0.063905    0.034969    3.59951e-05
+
+

@@ -1,0 +1,658 @@
+[0] !!!Softmax::TouchOpKernelRegistrar_softmax_MKLDNN_DEFAULT_TYPE()-NORMAL
+[1] backtrace() returned 50 addresses
+[2] 0 => /home/pawepiot/github.intel.com/debug_version/aipg/scripts/paddle/build/python/paddle/fluid/core.so(_Z50TouchOpKernelRegistrar_softmax_MKLDNN_DEFAULT_TYPEv+0x12a) [0x7f23f1a72557]
+[3] 1 => /home/pawepiot/github.intel.com/debug_version/aipg/scripts/paddle/build/python/paddle/fluid/core.so(+0x8e5b3da) [0x7f23f02653da]
+[4] 2 => /home/pawepiot/github.intel.com/debug_version/aipg/scripts/paddle/build/python/paddle/fluid/core.so(+0x8e5d61b) [0x7f23f026761b]
+[5] 3 => /lib64/ld-linux-x86-64.so.2(+0x106ba) [0x7f2461ba86ba]
+[6] 4 => /lib64/ld-linux-x86-64.so.2(+0x107cb) [0x7f2461ba87cb]
+[7] 5 => /lib64/ld-linux-x86-64.so.2(+0x158e2) [0x7f2461bad8e2]
+[8] 6 => /lib64/ld-linux-x86-64.so.2(+0x10564) [0x7f2461ba8564]
+[9] 7 => /lib64/ld-linux-x86-64.so.2(+0x14da9) [0x7f2461bacda9]
+[10] 8 => /lib/x86_64-linux-gnu/libdl.so.2(+0xf09) [0x7f24613adf09]
+[11] 9 => /lib64/ld-linux-x86-64.so.2(+0x10564) [0x7f2461ba8564]
+[12] 10 => /lib/x86_64-linux-gnu/libdl.so.2(+0x1571) [0x7f24613ae571]
+[13] 11 => /lib/x86_64-linux-gnu/libdl.so.2(dlopen+0x31) [0x7f24613adfa1]
+[14] 12 => /usr/bin/python2.7(_PyImport_GetDynLoadFunc+0xe9) [0x51bb39]
+[15] 13 => /usr/bin/python2.7(_PyImport_LoadDynamicModule+0x54) [0x51b704]
+[16] 14 => /usr/bin/python2.7() [0x4a4be1]
+[17] 15 => /usr/bin/python2.7() [0x4a80e5]
+[18] 16 => /usr/bin/python2.7(PyImport_ImportModuleLevel+0x2f8) [0x4a4028]
+[19] 17 => /usr/bin/python2.7() [0x4a5ae4]
+[20] 18 => /usr/bin/python2.7(PyObject_Call+0x3e) [0x4a587e]
+[21] 19 => /usr/bin/python2.7(PyEval_CallObjectWithKeywords+0x30) [0x4c5ef0]
+[22] 20 => /usr/bin/python2.7(PyEval_EvalFrameEx+0x2d6b) [0x4bec4b]
+[23] 21 => /usr/bin/python2.7(PyEval_EvalCodeEx+0x306) [0x4b9b66]
+[24] 22 => /usr/bin/python2.7(PyEval_EvalCode+0x16) [0x4b9856]
+[25] 23 => /usr/bin/python2.7(PyImport_ExecCodeModuleEx+0xbf) [0x4b978f]
+[26] 24 => /usr/bin/python2.7() [0x4b2bc6]
+[27] 25 => /usr/bin/python2.7() [0x4a4be1]
+[28] 26 => /usr/bin/python2.7() [0x4a80e5]
+[29] 27 => /usr/bin/python2.7(PyImport_ImportModuleLevel+0x2f8) [0x4a4028]
+[30] 28 => /usr/bin/python2.7() [0x4a5ae4]
+[31] 29 => /usr/bin/python2.7(PyObject_Call+0x3e) [0x4a587e]
+[32] 30 => /usr/bin/python2.7(PyEval_CallObjectWithKeywords+0x30) [0x4c5ef0]
+[33] 31 => /usr/bin/python2.7(PyEval_EvalFrameEx+0x2d6b) [0x4bec4b]
+[34] 32 => /usr/bin/python2.7(PyEval_EvalCodeEx+0x306) [0x4b9b66]
+[35] 33 => /usr/bin/python2.7(PyEval_EvalCode+0x16) [0x4b9856]
+[36] 34 => /usr/bin/python2.7(PyImport_ExecCodeModuleEx+0xbf) [0x4b978f]
+[37] 35 => /usr/bin/python2.7() [0x4b2bc6]
+[38] 36 => /usr/bin/python2.7() [0x4b40ec]
+[39] 37 => /usr/bin/python2.7() [0x4a4be1]
+[40] 38 => /usr/bin/python2.7(PyImport_ImportModuleLevel+0x937) [0x4a4667]
+[41] 39 => /usr/bin/python2.7() [0x4a5ae4]
+[42] 40 => /usr/bin/python2.7(PyObject_Call+0x3e) [0x4a587e]
+[43] 41 => /usr/bin/python2.7(PyEval_CallObjectWithKeywords+0x30) [0x4c5ef0]
+[44] 42 => /usr/bin/python2.7(PyEval_EvalFrameEx+0x2d6b) [0x4bec4b]
+[45] 43 => /usr/bin/python2.7(PyEval_EvalCodeEx+0x306) [0x4b9b66]
+[46] 44 => /usr/bin/python2.7() [0x4eb69f]
+[47] 45 => /usr/bin/python2.7(PyRun_FileExFlags+0x82) [0x4e58f2]
+[48] 46 => /usr/bin/python2.7(PyRun_SimpleFileExFlags+0x186) [0x4e41a6]
+[49] 47 => /usr/bin/python2.7(Py_Main+0x54e) [0x4938ce]
+[50] 48 => /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7f24615d1830]
+[51] 49 => /usr/bin/python2.7(_start+0x29) [0x493299]
+[52] !!!Softmax::TouchOpKernelRegistrar_softmax_MKLDNN_DEFAULT_TYPE()-NORMAL
+[53] backtrace() returned 50 addresses
+[54] 0 => /home/pawepiot/github.intel.com/debug_version/aipg/scripts/paddle/build/python/paddle/fluid/core.so(_Z50TouchOpKernelRegistrar_softmax_MKLDNN_DEFAULT_TYPEv+0x12a) [0x7f23f1a72557]
+[55] 1 => /home/pawepiot/github.intel.com/debug_version/aipg/scripts/paddle/build/python/paddle/fluid/core.so(+0x9390652) [0x7f23f079a652]
+[56] 2 => /home/pawepiot/github.intel.com/debug_version/aipg/scripts/paddle/build/python/paddle/fluid/core.so(+0x939235d) [0x7f23f079c35d]
+[57] 3 => /lib64/ld-linux-x86-64.so.2(+0x106ba) [0x7f2461ba86ba]
+[58] 4 => /lib64/ld-linux-x86-64.so.2(+0x107cb) [0x7f2461ba87cb]
+[59] 5 => /lib64/ld-linux-x86-64.so.2(+0x158e2) [0x7f2461bad8e2]
+[60] 6 => /lib64/ld-linux-x86-64.so.2(+0x10564) [0x7f2461ba8564]
+[61] 7 => /lib64/ld-linux-x86-64.so.2(+0x14da9) [0x7f2461bacda9]
+[62] 8 => /lib/x86_64-linux-gnu/libdl.so.2(+0xf09) [0x7f24613adf09]
+[63] 9 => /lib64/ld-linux-x86-64.so.2(+0x10564) [0x7f2461ba8564]
+[64] 10 => /lib/x86_64-linux-gnu/libdl.so.2(+0x1571) [0x7f24613ae571]
+[65] 11 => /lib/x86_64-linux-gnu/libdl.so.2(dlopen+0x31) [0x7f24613adfa1]
+[66] 12 => /usr/bin/python2.7(_PyImport_GetDynLoadFunc+0xe9) [0x51bb39]
+[67] 13 => /usr/bin/python2.7(_PyImport_LoadDynamicModule+0x54) [0x51b704]
+[68] 14 => /usr/bin/python2.7() [0x4a4be1]
+[69] 15 => /usr/bin/python2.7() [0x4a80e5]
+[70] 16 => /usr/bin/python2.7(PyImport_ImportModuleLevel+0x2f8) [0x4a4028]
+[71] 17 => /usr/bin/python2.7() [0x4a5ae4]
+[72] 18 => /usr/bin/python2.7(PyObject_Call+0x3e) [0x4a587e]
+[73] 19 => /usr/bin/python2.7(PyEval_CallObjectWithKeywords+0x30) [0x4c5ef0]
+[74] 20 => /usr/bin/python2.7(PyEval_EvalFrameEx+0x2d6b) [0x4bec4b]
+[75] 21 => /usr/bin/python2.7(PyEval_EvalCodeEx+0x306) [0x4b9b66]
+[76] 22 => /usr/bin/python2.7(PyEval_EvalCode+0x16) [0x4b9856]
+[77] 23 => /usr/bin/python2.7(PyImport_ExecCodeModuleEx+0xbf) [0x4b978f]
+[78] 24 => /usr/bin/python2.7() [0x4b2bc6]
+[79] 25 => /usr/bin/python2.7() [0x4a4be1]
+[80] 26 => /usr/bin/python2.7() [0x4a80e5]
+[81] 27 => /usr/bin/python2.7(PyImport_ImportModuleLevel+0x2f8) [0x4a4028]
+[82] 28 => /usr/bin/python2.7() [0x4a5ae4]
+[83] 29 => /usr/bin/python2.7(PyObject_Call+0x3e) [0x4a587e]
+[84] 30 => /usr/bin/python2.7(PyEval_CallObjectWithKeywords+0x30) [0x4c5ef0]
+[85] 31 => /usr/bin/python2.7(PyEval_EvalFrameEx+0x2d6b) [0x4bec4b]
+[86] 32 => /usr/bin/python2.7(PyEval_EvalCodeEx+0x306) [0x4b9b66]
+[87] 33 => /usr/bin/python2.7(PyEval_EvalCode+0x16) [0x4b9856]
+[88] 34 => /usr/bin/python2.7(PyImport_ExecCodeModuleEx+0xbf) [0x4b978f]
+[89] 35 => /usr/bin/python2.7() [0x4b2bc6]
+[90] 36 => /usr/bin/python2.7() [0x4b40ec]
+[91] 37 => /usr/bin/python2.7() [0x4a4be1]
+[92] 38 => /usr/bin/python2.7(PyImport_ImportModuleLevel+0x937) [0x4a4667]
+[93] 39 => /usr/bin/python2.7() [0x4a5ae4]
+[94] 40 => /usr/bin/python2.7(PyObject_Call+0x3e) [0x4a587e]
+[95] 41 => /usr/bin/python2.7(PyEval_CallObjectWithKeywords+0x30) [0x4c5ef0]
+[96] 42 => /usr/bin/python2.7(PyEval_EvalFrameEx+0x2d6b) [0x4bec4b]
+[97] 43 => /usr/bin/python2.7(PyEval_EvalCodeEx+0x306) [0x4b9b66]
+[98] 44 => /usr/bin/python2.7() [0x4eb69f]
+[99] 45 => /usr/bin/python2.7(PyRun_FileExFlags+0x82) [0x4e58f2]
+[100] 46 => /usr/bin/python2.7(PyRun_SimpleFileExFlags+0x186) [0x4e41a6]
+[101] 47 => /usr/bin/python2.7(Py_Main+0x54e) [0x4938ce]
+[102] 48 => /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7f24615d1830]
+[103] 49 => /usr/bin/python2.7(_start+0x29) [0x493299]
+[104] !!!Softmax::TouchOpKernelRegistrar_softmax_MKLDNN_DEFAULT_TYPE()-NORMAL
+[105] backtrace() returned 50 addresses
+[106] 0 => /home/pawepiot/github.intel.com/debug_version/aipg/scripts/paddle/build/python/paddle/fluid/core.so(_Z50TouchOpKernelRegistrar_softmax_MKLDNN_DEFAULT_TYPEv+0x12a) [0x7f23f1a72557]
+[107] 1 => /home/pawepiot/github.intel.com/debug_version/aipg/scripts/paddle/build/python/paddle/fluid/core.so(+0x93a7c47) [0x7f23f07b1c47]
+[108] 2 => /home/pawepiot/github.intel.com/debug_version/aipg/scripts/paddle/build/python/paddle/fluid/core.so(+0x93a9952) [0x7f23f07b3952]
+[109] 3 => /lib64/ld-linux-x86-64.so.2(+0x106ba) [0x7f2461ba86ba]
+[110] 4 => /lib64/ld-linux-x86-64.so.2(+0x107cb) [0x7f2461ba87cb]
+[111] 5 => /lib64/ld-linux-x86-64.so.2(+0x158e2) [0x7f2461bad8e2]
+[112] 6 => /lib64/ld-linux-x86-64.so.2(+0x10564) [0x7f2461ba8564]
+[113] 7 => /lib64/ld-linux-x86-64.so.2(+0x14da9) [0x7f2461bacda9]
+[114] 8 => /lib/x86_64-linux-gnu/libdl.so.2(+0xf09) [0x7f24613adf09]
+[115] 9 => /lib64/ld-linux-x86-64.so.2(+0x10564) [0x7f2461ba8564]
+[116] 10 => /lib/x86_64-linux-gnu/libdl.so.2(+0x1571) [0x7f24613ae571]
+[117] 11 => /lib/x86_64-linux-gnu/libdl.so.2(dlopen+0x31) [0x7f24613adfa1]
+[118] 12 => /usr/bin/python2.7(_PyImport_GetDynLoadFunc+0xe9) [0x51bb39]
+[119] 13 => /usr/bin/python2.7(_PyImport_LoadDynamicModule+0x54) [0x51b704]
+[120] 14 => /usr/bin/python2.7() [0x4a4be1]
+[121] 15 => /usr/bin/python2.7() [0x4a80e5]
+[122] 16 => /usr/bin/python2.7(PyImport_ImportModuleLevel+0x2f8) [0x4a4028]
+[123] 17 => /usr/bin/python2.7() [0x4a5ae4]
+[124] 18 => /usr/bin/python2.7(PyObject_Call+0x3e) [0x4a587e]
+[125] 19 => /usr/bin/python2.7(PyEval_CallObjectWithKeywords+0x30) [0x4c5ef0]
+[126] 20 => /usr/bin/python2.7(PyEval_EvalFrameEx+0x2d6b) [0x4bec4b]
+[127] 21 => /usr/bin/python2.7(PyEval_EvalCodeEx+0x306) [0x4b9b66]
+[128] 22 => /usr/bin/python2.7(PyEval_EvalCode+0x16) [0x4b9856]
+[129] 23 => /usr/bin/python2.7(PyImport_ExecCodeModuleEx+0xbf) [0x4b978f]
+[130] 24 => /usr/bin/python2.7() [0x4b2bc6]
+[131] 25 => /usr/bin/python2.7() [0x4a4be1]
+[132] 26 => /usr/bin/python2.7() [0x4a80e5]
+[133] 27 => /usr/bin/python2.7(PyImport_ImportModuleLevel+0x2f8) [0x4a4028]
+[134] 28 => /usr/bin/python2.7() [0x4a5ae4]
+[135] 29 => /usr/bin/python2.7(PyObject_Call+0x3e) [0x4a587e]
+[136] 30 => /usr/bin/python2.7(PyEval_CallObjectWithKeywords+0x30) [0x4c5ef0]
+[137] 31 => /usr/bin/python2.7(PyEval_EvalFrameEx+0x2d6b) [0x4bec4b]
+[138] 32 => /usr/bin/python2.7(PyEval_EvalCodeEx+0x306) [0x4b9b66]
+[139] 33 => /usr/bin/python2.7(PyEval_EvalCode+0x16) [0x4b9856]
+[140] 34 => /usr/bin/python2.7(PyImport_ExecCodeModuleEx+0xbf) [0x4b978f]
+[141] 35 => /usr/bin/python2.7() [0x4b2bc6]
+[142] 36 => /usr/bin/python2.7() [0x4b40ec]
+[143] 37 => /usr/bin/python2.7() [0x4a4be1]
+[144] 38 => /usr/bin/python2.7(PyImport_ImportModuleLevel+0x937) [0x4a4667]
+[145] 39 => /usr/bin/python2.7() [0x4a5ae4]
+[146] 40 => /usr/bin/python2.7(PyObject_Call+0x3e) [0x4a587e]
+[147] 41 => /usr/bin/python2.7(PyEval_CallObjectWithKeywords+0x30) [0x4c5ef0]
+[148] 42 => /usr/bin/python2.7(PyEval_EvalFrameEx+0x2d6b) [0x4bec4b]
+[149] 43 => /usr/bin/python2.7(PyEval_EvalCodeEx+0x306) [0x4b9b66]
+[150] 44 => /usr/bin/python2.7() [0x4eb69f]
+[151] 45 => /usr/bin/python2.7(PyRun_FileExFlags+0x82) [0x4e58f2]
+[152] 46 => /usr/bin/python2.7(PyRun_SimpleFileExFlags+0x186) [0x4e41a6]
+[153] 47 => /usr/bin/python2.7(Py_Main+0x54e) [0x4938ce]
+[154] 48 => /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7f24615d1830]
+[155] 49 => /usr/bin/python2.7(_start+0x29) [0x493299]
+[156] !!!Softmax::TouchOpKernelRegistrar_softmax_MKLDNN_DEFAULT_TYPE()-NORMAL
+[157] backtrace() returned 50 addresses
+[158] 0 => /home/pawepiot/github.intel.com/debug_version/aipg/scripts/paddle/build/python/paddle/fluid/core.so(_Z50TouchOpKernelRegistrar_softmax_MKLDNN_DEFAULT_TYPEv+0x12a) [0x7f23f1a72557]
+[159] 1 => /home/pawepiot/github.intel.com/debug_version/aipg/scripts/paddle/build/python/paddle/fluid/core.so(+0xbb05e50) [0x7f23f2f0fe50]
+[160] 2 => /home/pawepiot/github.intel.com/debug_version/aipg/scripts/paddle/build/python/paddle/fluid/core.so(+0xbb07d74) [0x7f23f2f11d74]
+[161] 3 => /lib64/ld-linux-x86-64.so.2(+0x106ba) [0x7f2461ba86ba]
+[162] 4 => /lib64/ld-linux-x86-64.so.2(+0x107cb) [0x7f2461ba87cb]
+[163] 5 => /lib64/ld-linux-x86-64.so.2(+0x158e2) [0x7f2461bad8e2]
+[164] 6 => /lib64/ld-linux-x86-64.so.2(+0x10564) [0x7f2461ba8564]
+[165] 7 => /lib64/ld-linux-x86-64.so.2(+0x14da9) [0x7f2461bacda9]
+[166] 8 => /lib/x86_64-linux-gnu/libdl.so.2(+0xf09) [0x7f24613adf09]
+[167] 9 => /lib64/ld-linux-x86-64.so.2(+0x10564) [0x7f2461ba8564]
+[168] 10 => /lib/x86_64-linux-gnu/libdl.so.2(+0x1571) [0x7f24613ae571]
+[169] 11 => /lib/x86_64-linux-gnu/libdl.so.2(dlopen+0x31) [0x7f24613adfa1]
+[170] 12 => /usr/bin/python2.7(_PyImport_GetDynLoadFunc+0xe9) [0x51bb39]
+[171] 13 => /usr/bin/python2.7(_PyImport_LoadDynamicModule+0x54) [0x51b704]
+[172] 14 => /usr/bin/python2.7() [0x4a4be1]
+[173] 15 => /usr/bin/python2.7() [0x4a80e5]
+[174] 16 => /usr/bin/python2.7(PyImport_ImportModuleLevel+0x2f8) [0x4a4028]
+[175] 17 => /usr/bin/python2.7() [0x4a5ae4]
+[176] 18 => /usr/bin/python2.7(PyObject_Call+0x3e) [0x4a587e]
+[177] 19 => /usr/bin/python2.7(PyEval_CallObjectWithKeywords+0x30) [0x4c5ef0]
+[178] 20 => /usr/bin/python2.7(PyEval_EvalFrameEx+0x2d6b) [0x4bec4b]
+[179] 21 => /usr/bin/python2.7(PyEval_EvalCodeEx+0x306) [0x4b9b66]
+[180] 22 => /usr/bin/python2.7(PyEval_EvalCode+0x16) [0x4b9856]
+[181] 23 => /usr/bin/python2.7(PyImport_ExecCodeModuleEx+0xbf) [0x4b978f]
+[182] 24 => /usr/bin/python2.7() [0x4b2bc6]
+[183] 25 => /usr/bin/python2.7() [0x4a4be1]
+[184] 26 => /usr/bin/python2.7() [0x4a80e5]
+[185] 27 => /usr/bin/python2.7(PyImport_ImportModuleLevel+0x2f8) [0x4a4028]
+[186] 28 => /usr/bin/python2.7() [0x4a5ae4]
+[187] 29 => /usr/bin/python2.7(PyObject_Call+0x3e) [0x4a587e]
+[188] 30 => /usr/bin/python2.7(PyEval_CallObjectWithKeywords+0x30) [0x4c5ef0]
+[189] 31 => /usr/bin/python2.7(PyEval_EvalFrameEx+0x2d6b) [0x4bec4b]
+[190] 32 => /usr/bin/python2.7(PyEval_EvalCodeEx+0x306) [0x4b9b66]
+[191] 33 => /usr/bin/python2.7(PyEval_EvalCode+0x16) [0x4b9856]
+[192] 34 => /usr/bin/python2.7(PyImport_ExecCodeModuleEx+0xbf) [0x4b978f]
+[193] 35 => /usr/bin/python2.7() [0x4b2bc6]
+[194] 36 => /usr/bin/python2.7() [0x4b40ec]
+[195] 37 => /usr/bin/python2.7() [0x4a4be1]
+[196] 38 => /usr/bin/python2.7(PyImport_ImportModuleLevel+0x937) [0x4a4667]
+[197] 39 => /usr/bin/python2.7() [0x4a5ae4]
+[198] 40 => /usr/bin/python2.7(PyObject_Call+0x3e) [0x4a587e]
+[199] 41 => /usr/bin/python2.7(PyEval_CallObjectWithKeywords+0x30) [0x4c5ef0]
+[200] 42 => /usr/bin/python2.7(PyEval_EvalFrameEx+0x2d6b) [0x4bec4b]
+[201] 43 => /usr/bin/python2.7(PyEval_EvalCodeEx+0x306) [0x4b9b66]
+[202] 44 => /usr/bin/python2.7() [0x4eb69f]
+[203] 45 => /usr/bin/python2.7(PyRun_FileExFlags+0x82) [0x4e58f2]
+[204] 46 => /usr/bin/python2.7(PyRun_SimpleFileExFlags+0x186) [0x4e41a6]
+[205] 47 => /usr/bin/python2.7(Py_Main+0x54e) [0x4938ce]
+[206] 48 => /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf0) [0x7f24615d1830]
+[207] 49 => /usr/bin/python2.7(_start+0x29) [0x493299]
+[208] !!! SoftmaxMKLDNNKernel
+[209] !!! SoftmaxMKLDNNKernel
+[210] !!! SoftmaxMKLDNNKernel
+[211] !!! SoftmaxMKLDNNKernel
+[212] !!! SoftmaxMKLDNNKernel
+[213] !!! SoftmaxMKLDNNKernel
+[214] !!! SoftmaxMKLDNNKernel
+[215] !!! SoftmaxMKLDNNKernel
+[216] !!! SoftmaxMKLDNNKernel
+[217] !!! SoftmaxMKLDNNKernel
+[218] !!! SoftmaxMKLDNNKernel
+[219] !!! SoftmaxMKLDNNKernel
+[220] !!! SoftmaxMKLDNNKernel
+[221] !!! SoftmaxMKLDNNKernel
+[222] !!! SoftmaxMKLDNNKernel
+[223] !!! SoftmaxMKLDNNKernel
+[224] !!! SoftmaxMKLDNNKernel
+[225] !!! SoftmaxMKLDNNKernel
+[226] !!! SoftmaxMKLDNNKernel
+[227] !!! SoftmaxMKLDNNKernel
+[228] !!! SoftmaxMKLDNNKernel
+[229] !!! SoftmaxMKLDNNKernel
+[230] !!! SoftmaxMKLDNNKernel
+[231] !!! SoftmaxMKLDNNKernel
+[232] !!! SoftmaxMKLDNNKernel
+[233] !!! SoftmaxMKLDNNKernel
+[234] !!! SoftmaxMKLDNNKernel
+[235] !!! SoftmaxMKLDNNKernel
+[236] !!! SoftmaxMKLDNNKernel
+[237] !!! SoftmaxMKLDNNKernel
+[238] !!! SoftmaxMKLDNNKernel
+[239] !!! SoftmaxMKLDNNKernel
+[240] !!! SoftmaxMKLDNNKernel
+[241] !!! SoftmaxMKLDNNKernel
+[242] !!! SoftmaxMKLDNNKernel
+[243] !!! SoftmaxMKLDNNKernel
+[244] !!! SoftmaxMKLDNNKernel
+[245] !!! SoftmaxMKLDNNKernel
+[246] !!! SoftmaxMKLDNNKernel
+[247] !!! SoftmaxMKLDNNKernel
+[248] !!! SoftmaxMKLDNNKernel
+[249] !!! SoftmaxMKLDNNKernel
+[250] !!! SoftmaxMKLDNNKernel
+[251] !!! SoftmaxMKLDNNKernel
+[252] !!! SoftmaxMKLDNNKernel
+[253] !!! SoftmaxMKLDNNKernel
+[254] !!! SoftmaxMKLDNNKernel
+[255] !!! SoftmaxMKLDNNKernel
+[256] !!! SoftmaxMKLDNNKernel
+[257] !!! SoftmaxMKLDNNKernel
+[258] !!! SoftmaxMKLDNNKernel
+[259] !!! SoftmaxMKLDNNKernel
+[260] !!! SoftmaxMKLDNNKernel
+[261] !!! SoftmaxMKLDNNKernel
+[262] !!! SoftmaxMKLDNNKernel
+[263] !!! SoftmaxMKLDNNKernel
+[264] !!! SoftmaxMKLDNNKernel
+[265] !!! SoftmaxMKLDNNKernel
+[266] !!! SoftmaxMKLDNNKernel
+[267] !!! SoftmaxMKLDNNKernel
+[268] !!! SoftmaxMKLDNNKernel
+[269] !!! SoftmaxMKLDNNKernel
+[270] !!! SoftmaxMKLDNNKernel
+[271] !!! SoftmaxMKLDNNKernel
+[272] !!! SoftmaxMKLDNNKernel
+[273] !!! SoftmaxMKLDNNKernel
+[274] !!! SoftmaxMKLDNNKernel
+[275] !!! SoftmaxMKLDNNKernel
+[276] !!! SoftmaxMKLDNNKernel
+[277] !!! SoftmaxMKLDNNKernel
+[278] !!! SoftmaxMKLDNNKernel
+[279] !!! SoftmaxMKLDNNKernel
+[280] !!! SoftmaxMKLDNNKernel
+[281] !!! SoftmaxMKLDNNKernel
+[282] !!! SoftmaxMKLDNNKernel
+[283] !!! SoftmaxMKLDNNKernel
+[284] !!! SoftmaxMKLDNNKernel
+[285] !!! SoftmaxMKLDNNKernel
+[286] !!! SoftmaxMKLDNNKernel
+[287] !!! SoftmaxMKLDNNKernel
+[288] !!! SoftmaxMKLDNNKernel
+[289] !!! SoftmaxMKLDNNKernel
+[290] !!! SoftmaxMKLDNNKernel
+[291] !!! SoftmaxMKLDNNKernel
+[292] !!! SoftmaxMKLDNNKernel
+[293] !!! SoftmaxMKLDNNKernel
+[294] !!! SoftmaxMKLDNNKernel
+[295] !!! SoftmaxMKLDNNKernel
+[296] !!! SoftmaxMKLDNNKernel
+[297] !!! SoftmaxMKLDNNKernel
+[298] !!! SoftmaxMKLDNNKernel
+[299] !!! SoftmaxMKLDNNKernel
+[300] !!! SoftmaxMKLDNNKernel
+[301] !!! SoftmaxMKLDNNKernel
+[302] !!! SoftmaxMKLDNNKernel
+[303] !!! SoftmaxMKLDNNKernel
+[304] !!! SoftmaxMKLDNNKernel
+[305] !!! SoftmaxMKLDNNKernel
+[306] !!! SoftmaxMKLDNNKernel
+[307] !!! SoftmaxMKLDNNKernel
+[308] !!! SoftmaxMKLDNNKernel
+[309] !!! SoftmaxMKLDNNKernel
+[310] !!! SoftmaxMKLDNNKernel
+[311] !!! SoftmaxMKLDNNKernel
+[312] !!! SoftmaxMKLDNNKernel
+[313] !!! SoftmaxMKLDNNKernel
+[314] !!! SoftmaxMKLDNNKernel
+[315] !!! SoftmaxMKLDNNKernel
+[316] !!! SoftmaxMKLDNNKernel
+[317] !!! SoftmaxMKLDNNKernel
+[318] !!! SoftmaxMKLDNNKernel
+[319] !!! SoftmaxMKLDNNKernel
+[320] !!! SoftmaxMKLDNNKernel
+[321] !!! SoftmaxMKLDNNKernel
+[322] !!! SoftmaxMKLDNNKernel
+[323] !!! SoftmaxMKLDNNKernel
+[324] !!! SoftmaxMKLDNNKernel
+[325] !!! SoftmaxMKLDNNKernel
+[326] !!! SoftmaxMKLDNNKernel
+[327] !!! SoftmaxMKLDNNKernel
+[328] !!! SoftmaxMKLDNNKernel
+[329] !!! SoftmaxMKLDNNKernel
+[330] !!! SoftmaxMKLDNNKernel
+[331] !!! SoftmaxMKLDNNKernel
+[332] !!! SoftmaxMKLDNNKernel
+[333] !!! SoftmaxMKLDNNKernel
+[334] !!! SoftmaxMKLDNNKernel
+[335] !!! SoftmaxMKLDNNKernel
+[336] !!! SoftmaxMKLDNNKernel
+[337] !!! SoftmaxMKLDNNKernel
+[338] !!! SoftmaxMKLDNNKernel
+[339] !!! SoftmaxMKLDNNKernel
+[340] !!! SoftmaxMKLDNNKernel
+[341] !!! SoftmaxMKLDNNKernel
+[342] !!! SoftmaxMKLDNNKernel
+[343] !!! SoftmaxMKLDNNKernel
+[344] !!! SoftmaxMKLDNNKernel
+[345] !!! SoftmaxMKLDNNKernel
+[346] !!! SoftmaxMKLDNNKernel
+[347] !!! SoftmaxMKLDNNKernel
+[348] !!! SoftmaxMKLDNNKernel
+[349] !!! SoftmaxMKLDNNKernel
+[350] !!! SoftmaxMKLDNNKernel
+[351] !!! SoftmaxMKLDNNKernel
+[352] !!! SoftmaxMKLDNNKernel
+[353] !!! SoftmaxMKLDNNKernel
+[354] !!! SoftmaxMKLDNNKernel
+[355] !!! SoftmaxMKLDNNKernel
+[356] !!! SoftmaxMKLDNNKernel
+[357] !!! SoftmaxMKLDNNKernel
+[358] !!! SoftmaxMKLDNNKernel
+[359] !!! SoftmaxMKLDNNKernel
+[360] !!! SoftmaxMKLDNNKernel
+[361] !!! SoftmaxMKLDNNKernel
+[362] !!! SoftmaxMKLDNNKernel
+[363] !!! SoftmaxMKLDNNKernel
+[364] !!! SoftmaxMKLDNNKernel
+[365] !!! SoftmaxMKLDNNKernel
+[366] !!! SoftmaxMKLDNNKernel
+[367] !!! SoftmaxMKLDNNKernel
+[368] !!! SoftmaxMKLDNNKernel
+[369] !!! SoftmaxMKLDNNKernel
+[370] !!! SoftmaxMKLDNNKernel
+[371] !!! SoftmaxMKLDNNKernel
+[372] !!! SoftmaxMKLDNNKernel
+[373] !!! SoftmaxMKLDNNKernel
+[374] !!! SoftmaxMKLDNNKernel
+[375] !!! SoftmaxMKLDNNKernel
+[376] !!! SoftmaxMKLDNNKernel
+[377] !!! SoftmaxMKLDNNKernel
+[378] !!! SoftmaxMKLDNNKernel
+[379] !!! SoftmaxMKLDNNKernel
+[380] !!! SoftmaxMKLDNNKernel
+[381] !!! SoftmaxMKLDNNKernel
+[382] !!! SoftmaxMKLDNNKernel
+[383] !!! SoftmaxMKLDNNKernel
+[384] !!! SoftmaxMKLDNNKernel
+[385] !!! SoftmaxMKLDNNKernel
+[386] !!! SoftmaxMKLDNNKernel
+[387] !!! SoftmaxMKLDNNKernel
+[388] !!! SoftmaxMKLDNNKernel
+[389] !!! SoftmaxMKLDNNKernel
+[390] !!! SoftmaxMKLDNNKernel
+[391] !!! SoftmaxMKLDNNKernel
+[392] !!! SoftmaxMKLDNNKernel
+[393] !!! SoftmaxMKLDNNKernel
+[394] !!! SoftmaxMKLDNNKernel
+[395] !!! SoftmaxMKLDNNKernel
+[396] !!! SoftmaxMKLDNNKernel
+[397] !!! SoftmaxMKLDNNKernel
+[398] !!! SoftmaxMKLDNNKernel
+[399] !!! SoftmaxMKLDNNKernel
+[400] !!! SoftmaxMKLDNNKernel
+[401] !!! SoftmaxMKLDNNKernel
+[402] !!! SoftmaxMKLDNNKernel
+[403] !!! SoftmaxMKLDNNKernel
+[404] !!! SoftmaxMKLDNNKernel
+[405] !!! SoftmaxMKLDNNKernel
+[406] !!! SoftmaxMKLDNNKernel
+[407] !!! SoftmaxMKLDNNKernel
+[408] !!! SoftmaxMKLDNNKernel
+[409] !!! SoftmaxMKLDNNGradKernel
+[410] !!! SoftmaxMKLDNNKernel
+[411] !!! SoftmaxMKLDNNKernel
+[412] !!! SoftmaxMKLDNNKernel
+[413] !!! SoftmaxMKLDNNKernel
+[414] !!! SoftmaxMKLDNNKernel
+[415] !!! SoftmaxMKLDNNKernel
+[416] !!! SoftmaxMKLDNNKernel
+[417] !!! SoftmaxMKLDNNKernel
+[418] !!! SoftmaxMKLDNNKernel
+[419] !!! SoftmaxMKLDNNKernel
+[420] !!! SoftmaxMKLDNNKernel
+[421] !!! SoftmaxMKLDNNKernel
+[422] !!! SoftmaxMKLDNNKernel
+[423] !!! SoftmaxMKLDNNKernel
+[424] !!! SoftmaxMKLDNNKernel
+[425] !!! SoftmaxMKLDNNKernel
+[426] !!! SoftmaxMKLDNNKernel
+[427] !!! SoftmaxMKLDNNKernel
+[428] !!! SoftmaxMKLDNNKernel
+[429] !!! SoftmaxMKLDNNKernel
+[430] !!! SoftmaxMKLDNNKernel
+[431] !!! SoftmaxMKLDNNKernel
+[432] !!! SoftmaxMKLDNNKernel
+[433] !!! SoftmaxMKLDNNKernel
+[434] !!! SoftmaxMKLDNNKernel
+[435] !!! SoftmaxMKLDNNKernel
+[436] !!! SoftmaxMKLDNNKernel
+[437] !!! SoftmaxMKLDNNKernel
+[438] !!! SoftmaxMKLDNNKernel
+[439] !!! SoftmaxMKLDNNKernel
+[440] !!! SoftmaxMKLDNNKernel
+[441] !!! SoftmaxMKLDNNKernel
+[442] !!! SoftmaxMKLDNNKernel
+[443] !!! SoftmaxMKLDNNKernel
+[444] !!! SoftmaxMKLDNNKernel
+[445] !!! SoftmaxMKLDNNKernel
+[446] !!! SoftmaxMKLDNNKernel
+[447] !!! SoftmaxMKLDNNKernel
+[448] !!! SoftmaxMKLDNNKernel
+[449] !!! SoftmaxMKLDNNKernel
+[450] !!! SoftmaxMKLDNNKernel
+[451] !!! SoftmaxMKLDNNKernel
+[452] !!! SoftmaxMKLDNNKernel
+[453] !!! SoftmaxMKLDNNKernel
+[454] !!! SoftmaxMKLDNNKernel
+[455] !!! SoftmaxMKLDNNKernel
+[456] !!! SoftmaxMKLDNNKernel
+[457] !!! SoftmaxMKLDNNKernel
+[458] !!! SoftmaxMKLDNNKernel
+[459] !!! SoftmaxMKLDNNKernel
+[460] !!! SoftmaxMKLDNNKernel
+[461] !!! SoftmaxMKLDNNKernel
+[462] !!! SoftmaxMKLDNNKernel
+[463] !!! SoftmaxMKLDNNKernel
+[464] !!! SoftmaxMKLDNNKernel
+[465] !!! SoftmaxMKLDNNKernel
+[466] !!! SoftmaxMKLDNNKernel
+[467] !!! SoftmaxMKLDNNKernel
+[468] !!! SoftmaxMKLDNNKernel
+[469] !!! SoftmaxMKLDNNKernel
+[470] !!! SoftmaxMKLDNNKernel
+[471] !!! SoftmaxMKLDNNKernel
+[472] !!! SoftmaxMKLDNNKernel
+[473] !!! SoftmaxMKLDNNKernel
+[474] !!! SoftmaxMKLDNNKernel
+[475] !!! SoftmaxMKLDNNKernel
+[476] !!! SoftmaxMKLDNNKernel
+[477] !!! SoftmaxMKLDNNKernel
+[478] !!! SoftmaxMKLDNNKernel
+[479] !!! SoftmaxMKLDNNKernel
+[480] !!! SoftmaxMKLDNNKernel
+[481] !!! SoftmaxMKLDNNKernel
+[482] !!! SoftmaxMKLDNNKernel
+[483] !!! SoftmaxMKLDNNKernel
+[484] !!! SoftmaxMKLDNNKernel
+[485] !!! SoftmaxMKLDNNKernel
+[486] !!! SoftmaxMKLDNNKernel
+[487] !!! SoftmaxMKLDNNKernel
+[488] !!! SoftmaxMKLDNNKernel
+[489] !!! SoftmaxMKLDNNKernel
+[490] !!! SoftmaxMKLDNNKernel
+[491] !!! SoftmaxMKLDNNKernel
+[492] !!! SoftmaxMKLDNNKernel
+[493] !!! SoftmaxMKLDNNKernel
+[494] !!! SoftmaxMKLDNNKernel
+[495] !!! SoftmaxMKLDNNKernel
+[496] !!! SoftmaxMKLDNNKernel
+[497] !!! SoftmaxMKLDNNKernel
+[498] !!! SoftmaxMKLDNNKernel
+[499] !!! SoftmaxMKLDNNKernel
+[500] !!! SoftmaxMKLDNNKernel
+[501] !!! SoftmaxMKLDNNKernel
+[502] !!! SoftmaxMKLDNNKernel
+[503] !!! SoftmaxMKLDNNKernel
+[504] !!! SoftmaxMKLDNNKernel
+[505] !!! SoftmaxMKLDNNKernel
+[506] !!! SoftmaxMKLDNNKernel
+[507] !!! SoftmaxMKLDNNKernel
+[508] !!! SoftmaxMKLDNNKernel
+[509] !!! SoftmaxMKLDNNKernel
+[510] !!! SoftmaxMKLDNNKernel
+[511] !!! SoftmaxMKLDNNKernel
+[512] !!! SoftmaxMKLDNNKernel
+[513] !!! SoftmaxMKLDNNKernel
+[514] !!! SoftmaxMKLDNNKernel
+[515] !!! SoftmaxMKLDNNKernel
+[516] !!! SoftmaxMKLDNNKernel
+[517] !!! SoftmaxMKLDNNKernel
+[518] !!! SoftmaxMKLDNNKernel
+[519] !!! SoftmaxMKLDNNKernel
+[520] !!! SoftmaxMKLDNNKernel
+[521] !!! SoftmaxMKLDNNKernel
+[522] !!! SoftmaxMKLDNNKernel
+[523] !!! SoftmaxMKLDNNKernel
+[524] !!! SoftmaxMKLDNNKernel
+[525] !!! SoftmaxMKLDNNKernel
+[526] !!! SoftmaxMKLDNNKernel
+[527] !!! SoftmaxMKLDNNKernel
+[528] !!! SoftmaxMKLDNNKernel
+[529] !!! SoftmaxMKLDNNKernel
+[530] !!! SoftmaxMKLDNNKernel
+[531] !!! SoftmaxMKLDNNKernel
+[532] !!! SoftmaxMKLDNNKernel
+[533] !!! SoftmaxMKLDNNKernel
+[534] !!! SoftmaxMKLDNNKernel
+[535] !!! SoftmaxMKLDNNKernel
+[536] !!! SoftmaxMKLDNNKernel
+[537] !!! SoftmaxMKLDNNKernel
+[538] !!! SoftmaxMKLDNNKernel
+[539] !!! SoftmaxMKLDNNKernel
+[540] !!! SoftmaxMKLDNNKernel
+[541] !!! SoftmaxMKLDNNKernel
+[542] !!! SoftmaxMKLDNNKernel
+[543] !!! SoftmaxMKLDNNKernel
+[544] !!! SoftmaxMKLDNNKernel
+[545] !!! SoftmaxMKLDNNKernel
+[546] !!! SoftmaxMKLDNNKernel
+[547] !!! SoftmaxMKLDNNKernel
+[548] !!! SoftmaxMKLDNNKernel
+[549] !!! SoftmaxMKLDNNKernel
+[550] !!! SoftmaxMKLDNNKernel
+[551] !!! SoftmaxMKLDNNKernel
+[552] !!! SoftmaxMKLDNNKernel
+[553] !!! SoftmaxMKLDNNKernel
+[554] !!! SoftmaxMKLDNNKernel
+[555] !!! SoftmaxMKLDNNKernel
+[556] !!! SoftmaxMKLDNNKernel
+[557] !!! SoftmaxMKLDNNKernel
+[558] !!! SoftmaxMKLDNNKernel
+[559] !!! SoftmaxMKLDNNKernel
+[560] !!! SoftmaxMKLDNNKernel
+[561] !!! SoftmaxMKLDNNKernel
+[562] !!! SoftmaxMKLDNNKernel
+[563] !!! SoftmaxMKLDNNKernel
+[564] !!! SoftmaxMKLDNNKernel
+[565] !!! SoftmaxMKLDNNKernel
+[566] !!! SoftmaxMKLDNNKernel
+[567] !!! SoftmaxMKLDNNKernel
+[568] !!! SoftmaxMKLDNNKernel
+[569] !!! SoftmaxMKLDNNKernel
+[570] !!! SoftmaxMKLDNNKernel
+[571] !!! SoftmaxMKLDNNKernel
+[572] !!! SoftmaxMKLDNNKernel
+[573] !!! SoftmaxMKLDNNKernel
+[574] !!! SoftmaxMKLDNNKernel
+[575] !!! SoftmaxMKLDNNKernel
+[576] !!! SoftmaxMKLDNNKernel
+[577] !!! SoftmaxMKLDNNKernel
+[578] !!! SoftmaxMKLDNNKernel
+[579] !!! SoftmaxMKLDNNKernel
+[580] !!! SoftmaxMKLDNNKernel
+[581] !!! SoftmaxMKLDNNKernel
+[582] !!! SoftmaxMKLDNNKernel
+[583] !!! SoftmaxMKLDNNKernel
+[584] !!! SoftmaxMKLDNNKernel
+[585] !!! SoftmaxMKLDNNKernel
+[586] !!! SoftmaxMKLDNNKernel
+[587] !!! SoftmaxMKLDNNKernel
+[588] !!! SoftmaxMKLDNNKernel
+[589] !!! SoftmaxMKLDNNKernel
+[590] !!! SoftmaxMKLDNNKernel
+[591] !!! SoftmaxMKLDNNKernel
+[592] !!! SoftmaxMKLDNNKernel
+[593] !!! SoftmaxMKLDNNKernel
+[594] !!! SoftmaxMKLDNNKernel
+[595] !!! SoftmaxMKLDNNKernel
+[596] !!! SoftmaxMKLDNNKernel
+[597] !!! SoftmaxMKLDNNKernel
+[598] !!! SoftmaxMKLDNNKernel
+[599] !!! SoftmaxMKLDNNKernel
+[600] !!! SoftmaxMKLDNNKernel
+[601] !!! SoftmaxMKLDNNKernel
+[602] !!! SoftmaxMKLDNNKernel
+[603] !!! SoftmaxMKLDNNKernel
+[604] !!! SoftmaxMKLDNNKernel
+[605] !!! SoftmaxMKLDNNKernel
+[606] !!! SoftmaxMKLDNNKernel
+[607] !!! SoftmaxMKLDNNKernel
+[608] !!! SoftmaxMKLDNNKernel
+[609] !!! SoftmaxMKLDNNKernel
+[610] !!! SoftmaxMKLDNNKernel
+[611] !!! SoftmaxMKLDNNKernel
+[612] !!! SoftmaxMKLDNNKernel
+[613] !!! SoftmaxMKLDNNKernel
+[614] !!! SoftmaxMKLDNNKernel
+[615] !!! SoftmaxMKLDNNKernel
+[616] !!! SoftmaxMKLDNNKernel
+[617] !!! SoftmaxMKLDNNKernel
+[618] !!! SoftmaxMKLDNNKernel
+[619] !!! SoftmaxMKLDNNKernel
+[620] !!! SoftmaxMKLDNNKernel
+[621] !!! SoftmaxMKLDNNKernel
+[622] !!! SoftmaxMKLDNNKernel
+[623] !!! SoftmaxMKLDNNKernel
+[624] !!! SoftmaxMKLDNNKernel
+[625] !!! SoftmaxMKLDNNKernel
+[626] !!! SoftmaxMKLDNNKernel
+[627] !!! SoftmaxMKLDNNKernel
+[628] !!! SoftmaxMKLDNNKernel
+[629] !!! SoftmaxMKLDNNKernel
+[630] !!! SoftmaxMKLDNNKernel
+[631] !!! SoftmaxMKLDNNKernel
+[632] !!! SoftmaxMKLDNNKernel
+[633] !!! SoftmaxMKLDNNKernel
+[634] !!! SoftmaxMKLDNNKernel
+[635] !!! SoftmaxMKLDNNKernel
+[636] !!! SoftmaxMKLDNNKernel
+[637] !!! SoftmaxMKLDNNKernel
+[638] !!! SoftmaxMKLDNNKernel
+[639] !!! SoftmaxMKLDNNKernel
+[640] !!! SoftmaxMKLDNNKernel
+[641] !!! SoftmaxMKLDNNKernel
+[642] !!! SoftmaxMKLDNNKernel
+[643] !!! SoftmaxMKLDNNKernel
+[644] !!! SoftmaxMKLDNNKernel
+[645] !!! SoftmaxMKLDNNKernel
+[646] !!! SoftmaxMKLDNNKernel
+[647] !!! SoftmaxMKLDNNKernel
+[648] !!! SoftmaxMKLDNNKernel
+[649] !!! SoftmaxMKLDNNKernel
+[650] !!! SoftmaxMKLDNNKernel
+[651] !!! SoftmaxMKLDNNKernel
+[652] !!! SoftmaxMKLDNNGradKernel
+[653] !!! SoftmaxMKLDNNKernel
+[654] !!! SoftmaxMKLDNNKernel
+[655] !!! SoftmaxMKLDNNGradKernel
+[656] !!! SoftmaxMKLDNNKernel
+[657] !!! SoftmaxMKLDNNGradKernel
